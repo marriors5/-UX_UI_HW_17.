@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    color: whitesmoke;
+}
+
+.nav {
+    display: flex;
+    padding: 20px;
+}
+
+header {
+    display: inline;
+    flex-direction: row;
+}
+
+.footer {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.WorkGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "BM summary1" "PR summary2" "DOI summary3";
+}
+
+#BM {
+    grid-area: BM;
+}
+
+#summary1 {
+    grid-area: summary1;
+    justify-content: flex-end;
+}
+
+#PR {
+    grid-area: PR;
+}
+
+#summary2 {
+    grid-area: summary2;
+}
+
+#DOI {
+    grid-area: DOI;
+}
+
+#summary3 {
+    grid-area: summary3;
+}
